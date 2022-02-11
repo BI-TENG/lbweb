@@ -1,0 +1,150 @@
+.news_field:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: .5rem 0;
+}
+
+.news_field:first-of-type:hover {
+    margin: 0 0 .5rem;
+}
+
+.news_field:hover a {
+    color: initial;
+}
+
+.news_field:hover span {
+    color: #333;
+}
+
+.news_field:hover span.blue,
+.news_field p span {
+    color: #1332D3;
+}
+
+.img {
+    text-align: center;
+}
+
+.d-flex .img {
+    width: 100%;
+}
+
+.news_field {
+    font-size: .9rem;
+}
+
+.news_field p {
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.news_field ul {
+    padding-left: 1.1rem;
+}
+
+.news_field ul li {
+    list-style-type: disc;
+}
+
+.d-flex .news_txt {
+    margin-top: 0;
+}
+
+.news_txt ul li {
+    display: flex;
+    margin-bottom: .2rem;
+}
+
+.news_txt ul li span {
+    color: #333;
+    display: block;
+}
+
+.d-flex .news_txt span {
+    display: block;
+    white-space: nowrap;
+}
+
+.news_field h3 {
+    justify-content: center;
+    background: #c1dbbb;
+    padding: .5rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.branch_box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news_txt table tr td {
+    vertical-align: baseline;
+    line-height: 30px;
+}
+
+.news_txt table tr td:first-of-type {
+    white-space: nowrap;
+}
+
+.branch {
+    width: 32%;
+    margin: 0 0.66666% .5rem;
+    border: 1px solid #b5b5b5;
+}
+
+.branch .news_txt {
+    margin-top: 0;
+}
+
+.branch .news_txt.title {
+    text-align: center;
+    background: #eefcea;
+    margin: 0 0 .2rem;
+    padding: .3rem;
+}
+
+.branch_txt {
+    padding: .3rem;
+}
+
+.branch_txt .news_txt {
+    margin-bottom: .3rem;
+}
+
+.branch_txt .address {
+    height: 54px;
+}
+
+.branch_txt a {
+    text-align: center;
+    background: #e6e6e6;
+    margin-top: .4rem;
+}
+
+@media (max-width:1200px) {
+    .d-flex {
+        flex-wrap: wrap;
+    }
+    .d-flex .news_txt {
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width:700px) {
+    .branch {
+        width: 48%;
+        margin: 0 1% .5rem;
+    }
+}
+
+@media (max-width:600px) {
+    .news_field h3 {
+        align-items: center;
+    }
+}
+
+@media (max-width:450px) {
+    .branch {
+        width: 100%;
+    }
+}

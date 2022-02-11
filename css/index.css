@@ -1,0 +1,500 @@
+/* ------------------------ 輪播圖 ------------------------ */
+
+.banner_slick {
+    position: relative;
+}
+
+.owl-carousel {
+    touch-action: manipulation;
+}
+
+.owl-carousel .owl-item img {
+    max-height: 700px;
+    height: auto;
+    margin-bottom: -6px;
+}
+
+.owl_box {
+    position: relative;
+}
+
+.owl-theme .owl-nav {
+    margin-top: 0;
+}
+
+.sync_txt {
+    position: absolute;
+    bottom: 0;
+    background: rgba(49, 49, 49, 0.7);
+}
+
+.sync_txt .owl-stage {
+    width: auto !important;
+    display: flex;
+    justify-content: center;
+}
+
+.sync_txt .item {
+    color: #fff;
+    background: rgba(49, 49, 49, 0.7);
+    text-align: center;
+    padding: .5rem 1rem;
+}
+
+.sync_txt .item:hover,
+.sync_txt .item:focus {
+    background: rgba(54, 146, 37, 0.7);
+}
+
+.sync_txt .current .item {
+    background: rgba(54, 146, 37, 0.7);
+}
+
+@media (max-width:900px) {
+    .sync_txt {
+        display: none !important;
+    }
+    .owl-carousel .owl-item img {
+        margin-bottom: 0;
+    }
+}
+
+
+/* ------------------------ 線上下單 ------------------------ */
+
+.padding {
+    padding: 2.5rem 1rem;
+}
+
+.main h2 {
+    color: #1b5042;
+    display: flex;
+    align-items: flex-end;
+}
+
+.main h2 span {
+    font-size: 1.3rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.main h2 img {
+    margin-right: .5rem;
+}
+
+.main h2 .fas {
+    font-size: 1.6rem;
+    color: #51b333;
+    margin-right: .5rem;
+}
+
+.order .container {
+    position: relative;
+    padding: 0;
+}
+
+#content {
+    position: absolute;
+    top: -35px;
+    left: 0;
+    color: #1b5042;
+}
+
+.order_box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.order_item {
+    width: 23%;
+    margin: 0 1%;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 15%);
+    transition: .5s;
+}
+
+.order_item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order_item p {
+    margin: 0;
+    text-align: center;
+}
+
+.order_item .title {
+    color: #1b5042;
+}
+
+.order_item .link {
+    width: 80%;
+    color: #1a8601;
+    border: 1px solid #1a8601;
+    border-radius: 50px;
+}
+
+.order_item img {
+    margin: 1.5rem 0;
+}
+
+.order_item:hover {
+    transform: translateY(-20px);
+    transition: .5s;
+}
+
+@media (max-width:991px) {
+    .order_item {
+        width: 45%;
+        margin: 0 2.5% 1.5rem;
+    }
+    .order_item:hover {
+        transform: translateY(0);
+    }
+}
+
+
+/* ------------------------ 業務公告 ------------------------ */
+
+.announcement h2 span {
+    border-bottom: 2px solid #1b5042;
+    padding: 0.2rem 1.2rem;
+}
+
+.announcement h2 {
+    border-bottom: 1px solid #b5b5b5;
+    margin: 0 1.5rem;
+}
+
+.announcement {
+    background: #fff;
+    padding: 2.5rem 1rem;
+}
+
+.announcement .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.announcement .left .narrate_box {
+    border: 1px solid #b5b5b5;
+}
+
+.narrate {
+    margin-bottom: 1rem;
+}
+
+.narrate .txt {
+    display: flex;
+    min-width: 100%;
+    padding: 0;
+}
+
+.narrate .txt p {
+    width: 100%;
+    border-bottom: 1px solid #b5b5b5;
+    border-left: 1px solid #b5b5b5;
+    margin: 0;
+    padding: .5rem;
+}
+
+.narrate .txt p:first-of-type {
+    border-left: 0;
+}
+
+.img_box {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.announcement_content {
+    background: #effcea;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 15%);
+    padding: 1.5rem;
+}
+
+.announcement_content ul {
+    margin-bottom: 0;
+}
+
+.announcement_content .title {
+    color: #1b5042;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1a8601;
+    padding: 0 1rem .3rem;
+    margin-bottom: 1rem;
+    transition: .5s;
+}
+
+.announcement_content .title a {
+    height: 27px;
+    color: #1b5042;
+    word-break: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 1.5rem;
+}
+
+.announcement_content .title span {
+    font-size: .8rem;
+}
+
+.more_box {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.more {
+    width: 10em;
+    color: #1a8601;
+    border: 1px solid #1a8601;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.more:hover,
+.more:focus {
+    color: #fff;
+    background: #1a8601;
+}
+
+.announcement_content .title:hover {
+    margin: 1rem -12px;
+    transition: .5s;
+}
+
+.announcement_content .title:first-of-type:hover {
+    margin: 0 -12px 1rem;
+    transition: .5s;
+}
+
+@media (max-width:991px) {
+    .announcement .left {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width:768px) {
+    .announcement_content .title a {
+        margin-right: 0;
+    }
+    .announcement_content .title span {
+        display: none;
+    }
+    .announcement_content .title:hover {
+        margin: 1rem 0;
+        transition: .5s;
+    }
+    .announcement_content .title:first-of-type:hover {
+        margin: 0 0 1rem;
+        transition: .5s;
+    }
+}
+
+@media (max-width:414px) {
+    .announcement_content {
+        padding: 1.5rem 1rem;
+    }
+    .narrate .txt p {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* ------------------------ tab ------------------------ */
+
+.tab {
+    background: #effcea;
+}
+
+.tab_title {
+    margin: 0 1.5rem;
+}
+
+.tabList {
+    border-bottom: 1px solid #b5b5b5;
+    margin-bottom: 0;
+}
+
+.tabList li {
+    padding-top: 0.2rem;
+    padding-left: 0.2rem;
+}
+
+.tabList li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6B6B6B;
+    padding: 0 .2rem;
+    position: relative;
+}
+
+.tabList li a::before {
+    content: url(../images/icon_2.png);
+    margin-right: .5rem;
+}
+
+.tabList .center a {
+    color: #1b5042;
+}
+
+.tabList a.selected {
+    color: #1b5042;
+    border-bottom: 2px solid #1b5042;
+}
+
+.tabList li a.selected::before,
+.tabList .center a::before {
+    content: url(../images/icon.png);
+}
+
+.tab_content .announcement_content {
+    background: #fff;
+}
+
+.tab_content>div {
+    display: none;
+}
+
+.tab_content>div.selected,
+div[aria-hidden="false"] {
+    display: block;
+}
+
+.hide,
+div[aria-hidden="true"] {
+    display: none;
+}
+
+.tabList .owl-stage {
+    transform: translate3d(10px, 0px, 0px);
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
+}
+
+.owl-theme .owl-nav .disabled {
+    opacity: 1;
+    border: 1px solid #6B6B6B !important;
+}
+
+.owl-theme .owl-nav .disabled span {
+    color: #6B6B6B;
+}
+
+@media (min-width:800px) {
+    .tabList.owl-carousel.owl-drag .owl-item {
+        width: auto !important;
+    }
+}
+
+@media (max-width:768px) {
+    .tab_title {
+        padding-top: .2rem;
+    }
+    .tabList {
+        border-bottom: none;
+    }
+    .tab_content .announcement_content {
+        border-top: 1px solid #b5b5b5;
+    }
+}
+
+@media (max-width:650px) {
+    .tab_title_box {
+        margin-left: 0;
+        margin-right: 2rem;
+    }
+    .tab_title {
+        margin-left: 0;
+    }
+    .tabList .owl-nav {
+        position: absolute;
+        top: 9px;
+        right: -50px;
+    }
+    .tabList .owl-prev,
+    .tabList .owl-next {
+        width: 20px;
+        height: 20px;
+        border-radius: 50% !important;
+        border: 1px solid #1a8601 !important;
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        margin: .2rem !important;
+    }
+    .tabList .owl-prev:focus,
+    .tabList .owl-next:focus {
+        outline: 3px dashed #ff6f00;
+    }
+    .tabList .owl-prev span,
+    .tabList .owl-next span {
+        color: #1a8601;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* ------------------------ 外部連捷 ------------------------ */
+
+.exterior_link h2 span {
+    border-bottom: 2px solid #1b5042;
+    padding: 0.2rem 1.2rem;
+}
+
+.exterior_link h2 {
+    border-bottom: 1px solid #b5b5b5;
+}
+
+.link_box {
+    margin-top: 1.5rem;
+}
+
+.link_inner {
+    padding: .5rem;
+}
+
+.link_box .owl-prev,
+.link_box .owl-next {
+    width: 20px;
+    height: 20px;
+    border-radius: 50% !important;
+    border: 1px solid #1a8601 !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    margin: .2rem !important;
+}
+
+.link_box .owl-prev:focus,
+.link_box .owl-next:focus {
+    outline: 3px dashed #ff6f00;
+}
+
+.link_box .owl-prev span,
+.link_box .owl-next span {
+    color: #1a8601;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

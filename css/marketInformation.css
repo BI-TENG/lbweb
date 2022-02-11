@@ -1,0 +1,238 @@
+/* ------------------------ 大盤 ------------------------ */
+
+.news_field:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: .5rem 0;
+}
+
+.news_field:first-of-type:hover {
+    margin: 0 0 .5rem;
+}
+
+.news_field:hover span {
+    color: #212529;
+}
+
+.narrate_box {
+    border: 1px solid #b5b5b5;
+}
+
+.narrate {
+    margin-bottom: 1rem;
+}
+
+.narrate .txt {
+    display: flex;
+    min-width: 100%;
+    padding: 0;
+}
+
+.narrate .txt p {
+    font-size: .9rem;
+    width: 100%;
+    border-bottom: 1px solid #b5b5b5;
+    border-left: 1px solid #b5b5b5;
+    margin: 0;
+    padding: .5rem;
+}
+
+.narrate .txt p:first-of-type {
+    border-left: 0;
+}
+
+.img_box {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.table_box {
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
+    overflow-x: auto;
+}
+
+.table_box h3 {
+    color: #1b5042;
+    padding: .5rem;
+    position: relative;
+}
+
+.table_box h3::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 20px;
+    background: #1b5042;
+    left: 0;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+.table_box table {
+    width: 100%;
+    word-break: break-all;
+    border-collapse: collapse;
+}
+
+.table_box table th,
+.table_box table td {
+    font-size: .9rem;
+    border: 1px solid #b5b5b5;
+    white-space: nowrap;
+    padding: .5rem;
+    text-align: center;
+}
+
+.table_box table thead {
+    background: #c1dbbb;
+}
+
+.table_box table tbody tr:nth-child(odd) {
+    background: #eefcea;
+}
+
+@media (max-width:600px) {
+    .table_box table thead {
+        display: none;
+    }
+    .table_box table tbody tr {
+        display: block;
+        margin-bottom: 1.5rem;
+        border: 1px solid #b5b5b5;
+    }
+    .table_box table tbody tr td {
+        display: block;
+        border: none;
+        text-align: left;
+    }
+    .table_box table tbody tr td::before {
+        content: attr(data-th)'：';
+        color: #2f633e;
+    }
+    .table_box table tbody tr td:first-of-type {
+        background-color: #c1dbbb;
+    }
+}
+
+@media (max-width:500px) {
+    .narrate .txt p {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* ------------------------ 個股 ------------------------ */
+
+.search_field {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: .5rem;
+}
+
+.search_field .btn {
+    width: 40px;
+    height: 35px;
+    border: 1px solid #1a8601;
+    border-radius: 0 10px 10px 0;
+    background: #fff;
+}
+
+.search_field span {
+    pointer-events: none;
+    position: relative;
+}
+
+.search_field span::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f002";
+    color: #217a0b;
+    position: absolute;
+    top: 50%;
+    right: 11px;
+    transform: translateY(-50%);
+}
+
+.search_field .search_box {
+    width: 13em;
+    height: 35px;
+    border: 1px solid #1a8601;
+    border-radius: 10px 0 0 10px;
+    padding: .2rem 1rem;
+    letter-spacing: 2px;
+    line-height: 35px;
+    background: #fff;
+}
+
+.search_field .search_box::placeholder {
+    color: #6B6B6B;
+    font-size: .9rem;
+}
+
+.right_box .time {
+    font-size: .9rem;
+}
+
+.right_box .center {
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.right_box .center span {
+    font-size: 1.3rem;
+    color: #6B6B6B;
+    margin-right: .3rem;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.box_inner {
+    width: 24%;
+    margin: 0 0.5% .6rem;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+}
+
+.inner_title,
+.inner_txt {
+    margin-bottom: 0;
+    padding: .2rem;
+}
+
+.inner_title {
+    color: #1b5042;
+    background: #e6e6e6;
+}
+
+.inner_txt {
+    font-size: 1.6rem;
+}
+
+.inner_txt span {
+    font-size: 1.1rem;
+}
+
+.news_field:hover h3 span {
+    color: #6B6B6B;
+}
+
+.news_field:hover .inner_txt span {
+    color: #dc3545;
+}
+
+@media (max-width:600px) {
+    .right_box .center {
+        flex-direction: row;
+        align-items: center;
+    }
+    .box_inner {
+        width: 49%;
+    }
+}
